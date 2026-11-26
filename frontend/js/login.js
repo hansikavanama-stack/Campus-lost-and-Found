@@ -1,5 +1,5 @@
 
-const API_URL = 'http://localhost:5000/api/auth/login';
+const API_URL = 'https://campus-lost-and-found-1-maju.onrender.com/api/auth/login';
 
 const loginForm = document.getElementById('loginForm');
 const message = document.getElementById('message');
