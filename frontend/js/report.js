@@ -1,5 +1,5 @@
 
-const API_URL = 'http://localhost:5000/api/items';
+const API_URL = 'https://campus-lost-and-found-1-maju.onrender.com/api/items';
 
 const token = localStorage.getItem('token');
 
