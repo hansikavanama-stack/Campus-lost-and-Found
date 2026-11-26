@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Campus Lost and Found Portal</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <h2>Campus Lost & Found</h2>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#items">Lost & Found</a>
+            <a href="#categories">Categories</a>
+            <a href="#about">About</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Campus Image -->
+    <section class="hero">
+
+        <img src="images/campus.jpg" alt="University Campus" class="campus-image">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+            <h1>Lost Something on Campus?</h1>
+
+            <p>
+                Find your missing belongings or help someone
+                reconnect with their lost items.
+            </p>
+
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search for wallets, books, phones..."
+                >
+
+                <button onclick="searchItems()">Search</button>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="about">
+
+        <div class="feature-card">
+            <div class="feature-icon">🔍</div>
+            <h3>Easy Search</h3>
+            <p>Quickly search for lost and found belongings.</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">📢</div>
+            <h3>Report Items</h3>
+            <p>Report lost or found items on campus.</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">🤝</div>
+            <h3>Submit Claims</h3>
+            <p>Connect with people who find your belongings.</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">🏫</div>
+            <h3>Campus Community</h3>
+            <p>Help make our campus a better place.</p>
+        </div>
+
+    </section>
+
+    <!-- Categories and Statistics -->
+    <section class="categories" id="categories">
+
+        <h2>EXPLORE CAMPUS ITEMS</h2>
+
+        <div class="stats">
+
+            <div>
+                <h3>10+</h3>
+                <p>Sample Items</p>
+            </div>
+
+            <div>
+                <h3>5</h3>
+                <p>Lost Items</p>
+            </div>
+
+            <div>
+                <h3>5</h3>
+                <p>Found Items</p>
+            </div>
+
+            <div>
+                <h3>24/7</h3>
+                <p>Campus Access</p>
+            </div>
+
+        </div>
+
+        <div class="category-grid">
+
+            <div class="category-card">
+                <div class="category-image image-one"></div>
+                <h3>Electronics</h3>
+                <p>Phones, chargers and earphones</p>
+            </div>
+
+            <div class="category-card">
+                <div class="category-image image-two"></div>
+                <h3>Personal Belongings</h3>
+                <p>Wallets, keys and accessories</p>
+            </div>
+
+            <div class="category-card">
+                <div class="category-image image-three"></div>
+                <h3>Documents</h3>
+                <p>Identity cards and certificates</p>
+            </div>
+
+            <div class="category-card">
+                <div class="category-image image-four"></div>
+                <h3>Stationery</h3>
+                <p>Books, notebooks and pens</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Recent Items -->
+    <section class="recent-section" id="items">
+
+        <h2>Recent Lost and Found Items</h2>
+
+        <p class="section-subtitle">
+            Browse recently reported items from our campus.
+        </p>
+
+        <div id="itemList">
+            Loading items...
+        </div>
+
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-section">
+
+        <h2>How It Works</h2>
+
+        <div class="how-grid">
+
+            <div>
+                <span>01</span>
+                <h3>Search Items</h3>
+                <p>Look for your missing belongings.</p>
+            </div>
+
+            <div>
+                <span>02</span>
+                <h3>Report an Item</h3>
+                <p>Submit details about lost or found items.</p>
+            </div>
+
+            <div>
+                <span>03</span>
+                <h3>Reconnect</h3>
+                <p>Submit a claim and reconnect with your item.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+
+        <h2>Campus Lost & Found</h2>
+
+        <p>
+            Helping students reconnect with their belongings.
+        </p>
+
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="#items">Items</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+        </div>
+
+        <p class="copyright">
+            © 2026 Campus Lost and Found Portal
+        </p>
+
+    </footer>
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+

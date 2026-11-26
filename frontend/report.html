@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Item - Campus Lost and Found</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h2>Campus Lost & Found</h2>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+        </nav>
+    </header>
+
+    <section class="form-container">
+        <h2>Report Lost / Found Item</h2>
+
+        <form id="reportForm">
+
+            <input type="text" id="itemName"
+                placeholder="Item Name" required>
+
+            <select id="type" required>
+                <option value="">Select Item Type</option>
+                <option value="lost">Lost</option>
+                <option value="found">Found</option>
+            </select>
+
+            <select id="category" required>
+                <option value="">Select Category</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Personal Belongings">Personal Belongings</option>
+                <option value="Documents">Documents</option>
+                <option value="Stationery">Stationery</option>
+                <option value="Accessories">Accessories</option>
+            </select>
+
+            <textarea id="description"
+                placeholder="Item Description" required></textarea>
+
+            <input type="text" id="location"
+                placeholder="Campus Location" required>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" required>
+
+            <button type="submit">Submit Report</button>
+
+        </form>
+
+        <p id="message"></p>
+    </section>
+
+    <script src="js/report.js"></script>
+</body>
+</html>

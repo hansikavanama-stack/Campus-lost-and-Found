@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard | Campus Lost & Found</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dashboard-page">
+
+    <div class="dashboard-layout">
+
+        <aside class="sidebar">
+            <h2 class="sidebar-logo">Campus Connect</h2>
+            <p class="sidebar-subtitle">Lost & Found Portal</p>
+
+            <nav class="sidebar-nav">
+                <a href="dashboard.html" class="active">Dashboard</a>
+                <a href="index.html">Home</a>
+                <a href="report.html">Report an Item</a>
+                <a href="#myItemsSection">My Reports</a>
+                <a href="#myClaimsSection">My Claims</a>
+                <a href="#receivedClaimsSection">Received Claims</a>
+            </nav>
+
+            <button id="logoutBtn" class="sidebar-logout">Logout</button>
+        </aside>
+
+        <main class="dashboard-main">
+
+            <div class="dashboard-topbar">
+                <div>
+                    <h1>Student Dashboard</h1>
+                    <p>Welcome to your Campus Lost and Found Portal.</p>
+                </div>
+
+                <a href="report.html" class="primary-btn">+ Report Item</a>
+            </div>
+
+            <section class="stats-grid">
+
+                <div class="stat-card">
+                    <h3>My Reports</h3>
+                    <p id="totalReports">0</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>My Claims</h3>
+                    <p id="totalClaims">0</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Pending Claims</h3>
+                    <p id="pendingClaims">0</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Approved Claims</h3>
+                    <p id="approvedClaims">0</p>
+                </div>
+
+            </section>
+
+            <section class="quick-actions">
+                <h2>Quick Actions</h2>
+
+                <div class="action-grid">
+
+                    <a href="report.html" class="action-card">
+                        <span>＋</span>
+                        <h3>Report Lost or Found Item</h3>
+                        <p>Submit a new item report.</p>
+                    </a>
+
+                    <a href="index.html" class="action-card">
+                        <span>⌕</span>
+                        <h3>Search Items</h3>
+                        <p>Find lost or found items.</p>
+                    </a>
+
+                </div>
+            </section>
+
+            <section class="dashboard-section" id="myItemsSection">
+                <h2>My Reported Items</h2>
+
+                <div id="myItems" class="dashboard-list">
+                    Loading your items...
+                </div>
+            </section>
+
+            <section class="dashboard-section" id="myClaimsSection">
+                <h2>My Claims</h2>
+
+                <div id="myClaims" class="dashboard-list">
+                    Loading your claims...
+                </div>
+            </section>
+
+            <section class="dashboard-section" id="receivedClaimsSection">
+                <h2>Claims Received on My Items</h2>
+
+                <div id="receivedClaims" class="dashboard-list">
+                    Loading received claims...
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
